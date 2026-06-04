@@ -1,9 +1,53 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Nathaniel's About Me</title>
+<title>About Me</title>
 <link href="style.css" rel="stylesheet">
 </head>
+
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #4A7856;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 13px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+	
+
 	
 <body>
 	
@@ -17,7 +61,46 @@
 </ul>
 </nav>
 	
+<header>
+<img src="" alt="" class="headerimage"/>
+</header>
 
+<section>
+  <h1><strong style="font-size: 30px;"></strong></h1>
+  <table>
+  <tbody>
+    <tr>
+      <td style="padding-left: 100px;"><img src="" alt="" id="myImage"/></td>
+		
+		<td style="padding-left: 30px;">	
+		<h2 style="padding-left: 5px;"></h2>
+			
+	      <p style="padding-right: 100px; padding-left: 5px;"></p>
+			
+		  <a href="">
+		  <button class="button"><span>Learn More </span></button>
+	    </a>		</td>
+    </tr>
+  </tbody>
+  </table>
+</section>
+
+<section class="catalog">
+        <h2></h2>
+        <div class="catalog-items">
+            <div class="container"><a href=""><img src="" alt="" class="image"/></a>
+			<div class="content"></div>
+		    </div>
+            
+		    <div class="container"><a href=""><img src="" alt="" class="image"/></a>
+			<div class="content"></div>
+		    </div>
+			
+            <div class="container"><a href=""><img src="" alt="" class="image"/></a>
+				<div class="content"></div>
+			</div>
+        </div>
+    </section>
 	
 <footer class="alignCenter">
 	<p><strong><a href="index.html">Home</a> | <a href="aboutme.html">About Me</a> | <a href="awards&certs.html">Awards & Certifications</a> | <a href="contact.html">Contact</a></strong></p>
